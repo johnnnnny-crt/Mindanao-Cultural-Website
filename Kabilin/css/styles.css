@@ -152,6 +152,8 @@
     width: 400px;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 12px;
+    overflow: hidden;
 }
 
 #aboutCarousel img {
