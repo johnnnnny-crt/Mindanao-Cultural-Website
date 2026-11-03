@@ -162,3 +162,112 @@
     object-fit: cover;
     border-radius: 12px;
 }
+
+
+.about-banner {
+    height: 250px;
+    background-image: url("../assets/images/Siargao_Island.avif");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding-left: 8%;
+}
+
+.about-banner h1 {
+    font-family: Georgia, serif;
+    font-size: 80px;
+    color: white;
+    font-weight: normal;
+}
+
+.about-page-content {
+    background-color: #30334a;
+    color: white;
+    padding: 50px 5%;
+}
+
+.about-row {
+    margin-bottom: 40px;
+}
+
+.about-row:last-child {
+    margin-bottom: 0;
+}
+
+.about-page-content h2 {
+    font-family: Arial, sans-serif;
+    font-size: 36px;
+    margin-bottom: 35px;
+}
+
+.about-description {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    max-width: 460px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+}
+
+.about-page-image {
+    width: 100%;
+    max-width: 450px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.purpose-text h2 {
+    margin-bottom: 25px;
+}
+
+.purpose-text h3 {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.purpose-text p {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.discover-section {
+    background-color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+.discover-section h2 {
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    color: #30334a;
+    font-weight: normal;
+}
+
+.discover-section p {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: #30334a;
+    margin-bottom: 25px;
+}
+
+.discover-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    border: 2px solid #b09b51;
+    border-radius: 30px;
+    color: #282828;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.discover-btn:hover {
+    background-color: #b09b51;
+    color: white;
+}
