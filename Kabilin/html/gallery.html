@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Kabilin</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+    <nav class="navbar bg-white">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand" href="home.html">KABILIN</a>
+
+            <ul class="navbar-nav flex-row ms-auto align-items-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">GALLERY</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="map.html">MAP</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link contact-btn" href="contact.html">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="gallery-banner">
+        <h1>Gallery</h1>
+    </section>
+
+    <section class="gallery-section">
+        <div class="container">
+
+            <h2>Destinations</h2>
+            <p>Explore the breathtaking landscapes and destinations of Mindanao.</p>
+
+            <div class="gallery-slider" id="destinations">
+                <div class="gallery-card" data-discription="Mount Apo is the highest peak in the Philippines, offering stunning views and diverse flora and fauna.">
+                    <img src="../assets/images/Mount_Apo.webp" alt="Mount Apo">
+                    <h3>Mount Apo</h3>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="../assets/images/Siargao_Island.avif" alt="Siargao Island">
+                    <h3>Siargao Island</h3>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="../assets/images/Enchanted_River.jpg" alt="Enchanted River">
+                    <h3>Enchanted River</h3>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="../assets/images/Tinago_Falls.jpg" alt="Tinago Falls">
+                    <h3>Tinago Falls</h3>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="../assets/images/Dahican_Beach.jpg" alt="Dahican Beach">
+                    <h3>Dahican Beach</h3>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="../assets/images/Britania_Islands.jpg" alt="Britania Islands">
+                    <h3>Britania Islands</h3>
+                </div>
+            </div>
+
+            <h2>Food</h2>
+            <p>Discover the traditional dishes and unique flavours of Mindanao.</p>
+
+            <div class="gallery-slider" id="food">
+                <div class="gallery-card">
+                    <img src="../assets/images/food/Pastil.jpg" alt="Pastil">
+                    <h3>Pastil</h3>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="../assets/images/food/Chicken_Piaparan.jpg" alt="Chicken Piaparan">
+                    <h3>Chicken Piaparan</h3>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="../assets/images/food/Tiyula_Itum.jpg" alt="Tiyula Itum">
+                    <h3>Tiyula Itum</h3>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="../assets/images/food/Satti.jpg" alt="Satti">
+                    <h3>Satti</h3>
+                </div>
+            </div>
+
+            <h2>Art</h2>
+            <p>Explore the traditional craftsmanship and artistic expressions of Mindanao's communities.</p>
+
+            <div class="gallery-slider" id="art">
+                <div class="gallery-card">
+                    <img src="../assets/images/art/Tnalak.jpg" alt="T'nalak Weaving">
+                    <h3>T'nalak Weaving</h3>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="../assets/images/art/Yakan_Textiles.jpg" alt="Yakan Textiles">
+                    <h3>Yakan Textiles</h3>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="../assets/images/art/Okir.jpg" alt="Maranao Okir">
+                    <h3>Maranao Okir</h3>
+                </div>
+
+                <div class="gallery-card">
+                    <img src="../assets/images/art/Brassware.jpg" alt="Traditional Brassware">
+                    <h3>Traditional Brassware</h3>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content gallery-modal-content">
+                
+                <div class="modal-header">
+                    <h2 class="modal-title fs-4" id="galleryModalTitle"></h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                
+                <div class="modal-body">
+                    <img id="galleryModalImage" src="" alt="">
+                    <p id="galleryModalDescription"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/gallery.js"></script>
+</body>
+</html>
