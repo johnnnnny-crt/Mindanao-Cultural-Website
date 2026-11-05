@@ -288,26 +288,58 @@
 
 /* Map Section Styles */
 
+.map-banner {
+    height: 250px;
+    background-image: url("../assets/images/Dahican_Beach.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+}
+
+.map-banner h1 {
+    font-family: Georgia, serif;
+    font-size: 80px;
+    color: white;
+    font-weight: normal;
+}
+
 .home-map-section {
     background-color: white;
-    padding: 70px 5%;
+    padding: 60px 5%;
     text-align: center;
+    min-height: 100vh;
 }
 
 .home-map-section h2,
-.map-page-section h1 {
+.map-page-section h2 {
     font-family: Georgia, serif;
     font-size: 42px;
-    color: #30334a;
     margin-bottom: 15px;
+}
+
+.home-map-section h2 {
+    color: #30334a;
+}
+
+.map-page-section h2 {
+    color: white;
 }
 
 .home-map-section > .container > p,
 .map-page-section > .container > p {
     font-family: Arial, sans-serif;
     font-size: 18px;
-    color: #30334a;
     margin-bottom: 30px;
+}
+
+.home-map-section > .container > p {
+    color: #30334a;
+}
+
+.map-page-section > .container > p {
+    color: white;
 }
 
 #homeMap {
@@ -334,7 +366,7 @@
 }
 
 .map-page-section {
-    background-color: #f5f5f5;
+    background-color: #30334a;
     padding: 60px 5%;
     text-align: center;
     min-height: 100vh;
@@ -390,4 +422,115 @@
     width: 100%;
     height: 100%;
     border-radius: 0;
+}
+
+/* Gallery Section Styles */
+
+
+.gallery-banner {
+    height: 250px;
+    background-image: url("../assets/images/Siargao_Island.avif");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+}
+
+.gallery-banner h1 {
+    font-family: Georgia, serif;
+    font-size: 80px;
+    color: white;
+    font-weight: normal;
+}
+
+.gallery-section,
+.home-gallery-section {
+    background-color: #30334a;
+    color: white;
+    padding: 60px 5%;
+}
+
+.gallery-section h2,
+.home-gallery-section h2 {
+    font-family: Georgia, serif;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.gallery-section p,
+.home-gallery-section p {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.gallery-slider {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 20px;
+    margin-bottom: 60px;
+}
+
+.gallery-card {
+    flex: 0 0 calc((100% - 40px) / 3);
+    background-color: white;
+    color: #30334a;
+    border-radius: 15px;
+    overflow: hidden;
+    scroll-snap-align: start;
+}
+
+.gallery-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.gallery-card h3 {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    padding: 15px;
+    margin: 0;
+    text-align: center;
+}
+
+.gallery-slider::-webkit-scrollbar {
+    height: 8px;
+}
+
+.gallery-slider::-webkit-scrollbar-thumb {
+    background-color: #b09b51;
+    border-radius: 10px;
+}
+
+.gallery-slider::-webkit-scrollbar-track {
+    background-color: #55586b;
+    border-radius: 10px;
+}
+
+.home-gallery-section .gallery-slider {
+    margin-bottom: 30px;
+}
+
+.gallery-more-btn {
+    display: block;
+    width: 195px;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 30px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.gallery-more-btn:hover {
+    background-color: white;
+    color: #30334a;
 }
