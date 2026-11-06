@@ -197,11 +197,11 @@
     margin-bottom: 0;
 }
 
-.about-page-content .col-6 {
+.about-page-content .about-row > div {
     display: flex;
     flex-direction: column;
-    justify-content: center;   
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
 }
 
 .about-page-content h2 {
@@ -752,5 +752,467 @@
         flex-direction: column;
         align-items: flex-start;
         gap: 10px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .hero {
+        height: 600px;
+        padding: 90px 5%;
+    }
+
+    .hero h1 {
+        font-size: 75px;
+    }
+
+    .hero p {
+        font-size: 20px;
+        margin-bottom: 50px;
+    }
+
+    .about-text p {
+        font-size: 17px;
+    }
+
+    #aboutCarousel img {
+        height: 350px;
+    }
+
+    .gallery-card {
+        flex: 0 0 calc((100% - 20px) / 2);
+    }
+
+    #homeMap {
+        height: 400px;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero {
+        height: 550px;
+        padding: 80px 5%;
+    }
+
+    .hero h1 {
+        font-size: 50px;
+        line-height: 1.2;
+    }
+
+    .hero p {
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .hero-buttons a {
+        padding: 12px 25px;
+        font-size: 15px;
+    }
+
+    .about-section {
+        padding: 40px 5%;
+    }
+
+    .about-text {
+        margin-bottom: 30px;
+    }
+
+    .about-text h2 {
+        margin-bottom: 20px;
+    }
+
+    .about-text p {
+        font-size: 16px;
+        max-width: 100%;
+    }
+
+    .more-btn {
+        margin-bottom: 10px;
+    }
+
+    #aboutCarousel img {
+        height: 280px;
+    }
+
+    .home-map-section {
+        padding: 40px 5%;
+        min-height: auto;
+    }
+
+    .home-map-section h2 {
+        font-size: 30px;
+    }
+
+    .home-map-section > .container > p {
+        font-size: 16px;
+    }
+
+    #homeMap {
+        height: 350px;
+    }
+
+    .home-gallery-section {
+        padding: 40px 5%;
+    }
+
+    .home-gallery-section h2 {
+        font-size: 30px;
+    }
+
+    .home-gallery-section > .container > p {
+        font-size: 16px;
+    }
+
+    .gallery-card {
+        flex: 0 0 100%;
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar-nav {
+        padding: 15px 0;
+        align-items: flex-start;
+    }
+
+    .navbar-nav .nav-link {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .navbar-nav .contact-btn {
+        display: inline-block;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .map-banner {
+        height: 220px;
+    }
+
+    .map-banner h1 {
+        font-size: 60px;
+    }
+
+    .map-page-section {
+        padding: 50px 5%;
+    }
+
+    .map-page-section h2 {
+        font-size: 36px;
+    }
+
+    #fullMap {
+        height: 550px;
+    }
+}
+
+@media (max-width: 767px) {
+    .map-banner {
+        height: 180px;
+    }
+
+    .map-banner h1 {
+        font-size: 42px;
+    }
+
+    .map-page-section {
+        padding: 40px 5%;
+    }
+
+    .map-page-section h2 {
+        font-size: 30px;
+    }
+
+    .map-page-section > .container > p {
+        font-size: 16px;
+    }
+
+    #fullMap {
+        height: 400px;
+    }
+
+    .fullscreen-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+        margin-top: 20px;
+    }
+
+    .map-popup {
+        width: 180px;
+    }
+
+    .map-popup img {
+        height: 110px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .about-banner {
+        height: 220px;
+    }
+
+    .about-banner h1 {
+        font-size: 60px;
+    }
+
+    .about-page-content {
+        padding: 50px 4%;
+    }
+
+    .about-page-content h2 {
+        font-size: 30px;
+        margin-bottom: 25px;
+    }
+
+    .about-description {
+        font-size: 16px;
+    }
+
+    .about-page-image {
+        height: 320px;
+    }
+
+    .purpose-text h3 {
+        font-size: 21px;
+    }
+
+    .purpose-text p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .about-banner {
+        height: 180px;
+    }
+
+    .about-banner h1 {
+        font-size: 42px;
+    }
+
+    .about-page-content {
+        padding: 40px 5%;
+    }
+
+    .about-row {
+        margin-bottom: 45px;
+        row-gap: 25px;
+    }
+
+    .about-page-content h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .about-description {
+        font-size: 16px;
+        max-width: 100%;
+        text-align: left;
+    }
+
+    .about-page-image {
+        height: 260px;
+        max-width: 100%;
+    }
+
+    .purpose-text h2 {
+        margin-bottom: 20px;
+    }
+
+    .purpose-text h3 {
+        font-size: 21px;
+    }
+
+    .purpose-text p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .discover-section {
+        padding: 35px 5%;
+    }
+
+    .discover-section h2 {
+        font-size: 26px;
+    }
+
+    .discover-section p {
+        font-size: 16px;
+    }
+
+    .discover-btn {
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .contact-banner {
+        height: 220px;
+    }
+
+    .contact-banner h1 {
+        font-size: 60px;
+    }
+
+    .contact-section {
+        padding: 50px 5%;
+    }
+
+    .contact-info {
+        padding-right: 30px;
+    }
+
+    .contact-info h2 {
+        font-size: 30px;
+    }
+
+    .contact-info h3 {
+        font-size: 20px;
+    }
+
+    .contact-info p {
+        font-size: 16px;
+    }
+
+    .contact-form-container {
+        padding: 25px;
+    }
+
+    .contact-form-container h2 {
+        font-size: 27px;
+    }
+}
+
+@media (max-width: 767px) {
+    .contact-banner {
+        height: 180px;
+    }
+
+    .contact-banner h1 {
+        font-size: 42px;
+    }
+
+    .contact-section {
+        padding: 40px 5%;
+    }
+
+    .contact-info {
+        padding-right: 0;
+        margin-bottom: 35px;
+    }
+
+    .contact-info h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .contact-info h3 {
+        font-size: 20px;
+        margin-top: 25px;
+    }
+
+    .contact-info p {
+        font-size: 16px;
+    }
+
+    .contact-form-container {
+        padding: 20px;
+    }
+
+    .contact-form-container h2 {
+        font-size: 26px;
+        margin-bottom: 25px;
+    }
+
+    .contact-form-container .form-control {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .contact-submit-btn {
+        width: 100%;
+        padding: 12px 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .gallery-banner {
+        height: 220px;
+    }
+
+    .gallery-banner h1 {
+        font-size: 60px;
+    }
+
+    .gallery-section {
+        padding: 50px 5%;
+    }
+
+    .gallery-section h2 {
+        font-size: 32px;
+    }
+
+    .gallery-section > .container > p {
+        font-size: 17px;
+    }
+
+    .gallery-card img {
+        height: 230px;
+    }
+}
+
+@media (max-width: 767px) {
+    .gallery-banner {
+        height: 180px;
+    }
+
+    .gallery-banner h1 {
+        font-size: 42px;
+    }
+
+    .gallery-section {
+        padding: 40px 5%;
+    }
+
+    .gallery-section h2 {
+        font-size: 28px;
+    }
+
+    .gallery-section > .container > p {
+        font-size: 16px;
+    }
+
+    .gallery-slider {
+        margin-bottom: 40px;
+    }
+
+    .gallery-card img {
+        height: 220px;
+    }
+
+    .gallery-card h3 {
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    .gallery-modal-content .modal-body {
+        padding: 0 15px 15px;
+    }
+
+    #galleryModalImage {
+        max-height: 50vh;
+    }
+
+    #galleryModalDescription {
+        font-size: 15px;
+        line-height: 1.5;
+        text-align: left;
     }
 }
